@@ -44,8 +44,8 @@ h1 {
 
 .playing {
     transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
+    border-color: #00ff22;
+    box-shadow: 0 0 1rem #00ff22;
 }
 
 .key kbd {
@@ -55,7 +55,7 @@ h1 {
 }
 
 .sound {
-    color: rgb(255, 187, 0);
+    color: #00ff22;
     font-size: 1.1rem;
     text-transform: uppercase;
 }

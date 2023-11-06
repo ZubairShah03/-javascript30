@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
 }
 
-body{
+body {
     background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
     font-size: 2rem;
     display: flex;
@@ -14,29 +14,42 @@ body{
     height: 100vh;
 }
 
-.clock{
+.clock {
     width: 40rem;
     height: 40rem;
     border: 20px solid white;
     border-radius: 50%;
-    padding: 2rem;
     /* margin: 50px auto;
     position: relative; */
     box-shadow:
-        0 0 0 4px rgba(0,0,0,0.1),
+        0 0 0 4px rgba(0, 0, 0, 0.1),
         inset 0 0 0 3px #EFEFEF,
         inset 0 0 10px black,
-        0 0 10px rgba(0,0,0,0.2);
+        0 0 10px rgba(0, 0, 0, 0.2);
     transform: rotate(90deg);
+    padding: 5rem;
 }
 
-.clock-face{
+.clock-face {
     width: 100%;
     height: 100%;
     transform: translateY(-3px);
 }
 
-.hand{
+.clock-img {
+    width: 37rem;
+    height: 37rem;
+    background: url(clock_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 5rem;
+}
+
+.hand {
     width: 50%;
     height: 6px;
     background-color: black;
@@ -45,4 +58,19 @@ body{
     transform-origin: 100%;
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand{
+   height: 3px;
+   background-color: rgb(255, 0, 0);
+}
+
+.min-hand{
+    height: 4px;
+    background-color: rgb(184, 16, 16);
+}
+
+.hour-hand{
+    height: 6px;
+    background-color: rgb(218, 6, 6);
 }

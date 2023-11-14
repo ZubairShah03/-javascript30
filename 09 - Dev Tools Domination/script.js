@@ -5,6 +5,7 @@ function makeGreen() {
     const p = document.querySelector('p');
     p.style.color = 'crimson';
     p.style.fontSize = '70px';
+    p.innerText = "I Said Don't ☠";
 }
 
 // Regular
